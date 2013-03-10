@@ -1,0 +1,174 @@
+body { background:#ececec; font-family:Verdana, Geneva, sans-serif; font-size:medium;
+    margin: 0; padding: 0; border: 0; overflow: scroll; height: 100%; max-height: 100%; min-width:800px;}
+
+a:link      {text-decoration:none; color:#005500;}
+a:visited {text-decoration:none; color:#005500;}
+a:hover     {text-decoration:none; color:#005500; background:#AABBCC;} 
+a:hover.image {text-decoration:none; color:#005500; background:#FFFFFF;}
+td  { text-align:left;}
+    
+table, td{ border-collapse:collapse;}
+    
+th  { border:1px solid black; 
+      background-color:#BBBBBB;}
+    
+td.login { width:100px; }
+       
+table.reg { margin-left:auto; margin-right:auto; }
+td.reg { width:200px; }
+     
+p.center { text-align:center; }
+
+div.change  { text-align:right;}
+
+h1, h2, h3 {
+  margin:.8em 0 .2em 0;
+  padding:0;
+}
+p {
+  margin:.4em 0 .8em 0;
+  padding:0;
+}
+
+/*img { margin:10px 0 5px; }*/
+div.rounded {
+  background-color: #ececec;
+ border:  2px solid black;
+ width:200px;
+text-align:center;
+border-radius:10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px; 
+  
+}
+
+#header {
+  
+  float:left;
+  width:100%;
+  padding:0;
+  margin:0;
+  border-bottom:5px solid #000;
+  height: 50px; /*Height of frame div*/
+  overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+  background-color: #339999;
+  color: black;
+}
+
+.profilebar {
+  background-color: #339999;
+  color: black;
+  font-weight: bold;
+  height: 25px;
+  width: 100%;
+}
+
+#header a:link     {text-decoration:none; color:#FFFFFF;}
+#header a:visited {text-decoration:none; color:#FFFFFF;}
+#header a:hover     {text-decoration:none; color:#101010;}
+
+#header p {
+  padding:.5em 15px  .2em 15px;
+  margin:0;
+}
+#header h1  {
+  padding:.2em 15px;
+  margin:0;
+}
+#header h2  {
+  padding:.2em 15px  .7em 15px;
+  margin:0;
+}
+#colmask {
+  position:relative;  /* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+  clear:both;
+  float:left;
+  width:100%;      /* width of whole page */
+  overflow:hidden;    /* This chops off any overhanging divs */
+  background:#ececec;    /* Left column background colour */
+}
+#colmid {
+  float:left;
+  width:200%;
+  position:relative;
+  left:200px;
+  background:#ececec;      /* Centre column background colour */
+}
+#colright {
+  float:left;
+  width:100%;
+  position:relative;
+  left:50%;
+  margin-left:-400px;
+  background:#ececec;      /* Right column background colour */
+}
+#col1wrap {
+  float:right;
+  width:50%;
+  position:relative;
+  right:100%;
+}
+#col1pad {
+  margin:0 15px 0 415px;
+  overflow:hidden;
+}
+#col1 {
+  width:100%;
+  overflow:hidden;
+}
+#col2 {
+  float:left;
+  width:170px;
+  position:relative;
+  margin-left:-50%;
+  left:210px;
+  overflow:hidden;
+}
+#col3 {
+  float:left;
+  width:170px;
+  position:relative;
+  left:15px;
+  overflow:hidden;
+}
+#footer {
+float:left;
+}
+#footer p {
+  padding:.5em 15px;
+}
+
+.postcol {
+  width:100%;
+  float:left;
+}
+.postcol1 {
+  float:left;
+  width:170px;
+  position:relative;
+  margin-left:-50%;
+  left:210px;
+}
+
+.postcol2 {
+  float:left;
+  width:100%;
+  position:relative;
+  left:100px;
+}
+.textbottom {vertical-align:text-bottom;} 
+.textmiddle {vertical-align:middle;} 
+.texttop {vertical-align:top;} 
+.textbaseline {vertical-align:baseline;} 
+
+ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+ul#tabs li { display: inline; font-size:90%}
+ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+ul#tabs li a:hover { background-color: #f1f0ee; }
+ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
+div.tabContent.hide { display: none; }
+
+ul {margin-top: 0; margin-bottom: 0; }
+ol {margin-top: 0; margin-bottom: 0; }
