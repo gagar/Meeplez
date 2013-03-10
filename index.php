@@ -39,7 +39,7 @@ if ($userid>0) {
             <table>
               <tr>
                 <td>
-                  <h1>Welcome to <img src="/images/logo.png" /></h1>
+                  <h1>Welcome to meeplez.com</h1>
                                     
                   <p>New user?  <a href="register.php"><img src="http://www.figkids.com/photos/xy-register-button.png"></a> for an account to join the <em>meeplez</em> community.</p>
                   <table>
