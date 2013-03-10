@@ -9,19 +9,6 @@ if ($userid>0) {
   header("location:login.php");
 }
 ?>
-
-<?php
-include 'lib/EpiCurl.php';
-include 'lib/EpiOAuth.php';
-include 'lib/EpiTwitter.php';
-include 'lib/secret.php';
-
-$twitterObj = new EpiTwitter($consumer_key, $consumer_secret);
-$oauth_token = $_GET['66041783-s0wiXq0vrwszaujMeTh4C6oKJnLbGAe6EG2KZScHc'];
-
-?>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -72,30 +59,7 @@ $oauth_token = $_GET['66041783-s0wiXq0vrwszaujMeTh4C6oKJnLbGAe6EG2KZScHc'];
         <div id="col2">
 			<p></p>
               </div>
-        <div id="col3">
-	  <?php
-        if($oauth_token == '')
- {
- $url = $twitterObj->getAuthorizationUrl();
- echo "<div style='width:200px;margin-top:200px;margin-left:auto;margin-right:auto'>";
- echo "<a href='$url'>Sign In with Twitter</a>";
- echo "</div>";
- }
- else
- {
- $twitterObj->setToken($_GET['66041783-s0wiXq0vrwszaujMeTh4C6oKJnLbGAe6EG2KZScHc']);
- $token = $twitterObj->getAccessToken();
- $twitterObj->setToken($token->oauth_token, $token->oauth_token_secret);
- $_SESSION['ot'] = $token->oauth_token;
- $_SESSION['ots'] = $token->oauth_token_secret;
- $twitterInfo= $twitterObj->get_accountVerify_credentials();
- $twitterInfo->response;
- $username = $twitterInfo->screen_name;
-
- $profilepic = $twitterInfo->profile_image_url;
-
- }
- ?>
+        <div id="col3">      
 		
         
         </div>
